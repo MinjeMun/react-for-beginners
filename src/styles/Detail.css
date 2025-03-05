@@ -1,0 +1,50 @@
+.detail-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.loading-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+}
+
+.movie-detail {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-detail img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.movie-detail h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.movie-detail p {
+    font-size: 16px;
+    color: #666;
+}
+
+.movie-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-detail li {
+    display: inline-block;
+    background: #ddd;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}

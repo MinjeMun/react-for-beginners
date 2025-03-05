@@ -3,11 +3,18 @@ import "../styles/Movie.css";
 import { Link } from "react-router-dom";
 
 function Movie({ id, coverImg, title, summary, genres, showLink = true }) {
+    console.log(process.env.PUBLIC_URL);
     return (
         <div className="movie-container">
             <img src={coverImg} alt={title} />
             <h3 className="movie-title">
-                {showLink ? <Link to={`/movie/${id}`}>{title}</Link> : title}
+                {showLink ? (
+                    <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>
+                        {title}
+                    </Link>
+                ) : (
+                    title
+                )}
             </h3>
             <p className="movie-summary">{summary}</p>
             <ul className="genre-list">
